@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,800");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700");
 ul {
   list-style-type: none;
   padding: 0; }
@@ -69,7 +69,7 @@ ul {
   color: #666666; }
 
 strong {
-  font-weight: 800; }
+  font-weight: 700; }
 
 .page {
   background: white;
