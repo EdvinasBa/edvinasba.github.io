@@ -5,14 +5,17 @@
 	font-size: 11pt
 	justify-content: center
 	margin: 0
-	flex-direction: column
-	@media screen and(min-width: $break-small)
-		flex-direction: row
+	li
+		&:nth-child(1), &:nth-child(2)
+			&:after
+				content: "\25cf"
+				text-align: center
+				padding: 0 0.5em
+	@media screen and(max-width: $break-small)
+		flex-direction: column
 		li
 			&:nth-child(1), &:nth-child(2)
 				&:after
-					content: "\25cf"
-					text-align: center
-					padding: 0 0.5em
-
+					content: ""
+					padding: 0
 
