@@ -12,7 +12,7 @@ body {
 
 html {
   font-size: 16px; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 720px) {
     html {
       font-size: 18px; } }
 
@@ -23,33 +23,43 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.4rem;
   font-weight: 300;
   text-transform: uppercase;
   margin: 1.5rem 0; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 720px) {
     h1 {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      text-align: left; } }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
-  font-weight: 300; }
-  @media screen and (max-width: 640px) {
+  font-weight: 300;
+  margin: 1rem 0; }
+  @media screen and (max-width: 720px) {
     h2 {
       font-size: 1.2rem; } }
 
 h3 {
   font-weight: 400;
-  font-size: 1.1rem;
-  padding-bottom: 1rem; }
-  @media screen and (max-width: 640px) {
-    h3 {
-      padding-bottom: 0; } }
+  margin: 1rem 0;
+  font-size: 1.1rem; }
+
+h4 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 2rem 0;
+  margin-top: -1.3rem; }
+  @media screen and (max-width: 720px) {
+    h4 {
+      padding-bottom: 0;
+      text-align: right; } }
 
 p {
   font-weight: 400;
+  line-height: 1.3rem;
   font-size: 0.9rem; }
 
 ul {
@@ -68,7 +78,7 @@ ul {
   .page.A4page {
     max-width: 21cm;
     min-height: 29.7cm; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 720px) {
     .page {
       padding: 0 30px; } }
 
@@ -81,14 +91,14 @@ ul {
   flex-wrap: wrap;
   background-color: #fff; }
   .descriptionContainer .descriptionTitle {
-    -webkit-flex-basis: 30%;
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
     text-transform: uppercase; }
   .descriptionContainer .descriptionText {
-    -webkit-flex-basis: 70%;
-    -ms-flex-preferred-size: 70%;
-    flex-basis: 70%;
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
     text-align: justify; }
   .descriptionContainer:before {
     display: block;
@@ -97,13 +107,16 @@ ul {
     font-size: 0.6em;
     overflow: hidden;
     content: '....................................................................................................................................................................................................................'; }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 720px) {
     .descriptionContainer {
       display: block; } }
 
 .mainHeader {
   text-align: center;
   padding: 3em 0; }
+  @media screen and (max-width: 720px) {
+    .mainHeader {
+      padding: 1em 0; } }
 
 .contacts {
   display: -webkit-flex;
@@ -121,7 +134,7 @@ ul {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 720px) {
     .contacts {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
@@ -132,9 +145,9 @@ ul {
         padding: 0 0.5em; } }
 
 .personalSkills {
-  -webkit-flex-basis: 70%;
-  -ms-flex-preferred-size: 70%;
-  flex-basis: 70%;
+  -webkit-flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -142,10 +155,15 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .personalSkills article {
-    -webkit-flex-basis: 33%;
-    -ms-flex-preferred-size: 33%;
-    flex-basis: 33%; }
-  @media screen and (max-width: 640px) {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .personalSkills article h3 {
+      min-height: 44px; }
+    .personalSkills article ul {
+      border-left: 1px solid #999999;
+      padding-left: 0.5rem; }
+  @media screen and (max-width: 720px) {
     .personalSkills {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -162,3 +180,27 @@ ul {
 .mainFooter {
   text-align: center;
   padding: 2em 0; }
+
+.dateList {
+  -webkit-flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%; }
+  .dateList article p {
+    margin: 0; }
+  .dateList article div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .dateList article div h3:nth-child(1) {
+      -webkit-flex: 2 1 auto;
+      -ms-flex: 2 1 auto;
+      flex: 2 1 auto; }
+    .dateList article div h3:nth-child(2) {
+      text-align: right;
+      margin: 1rem 0;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto; }

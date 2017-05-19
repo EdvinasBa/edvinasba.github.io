@@ -1,9 +1,16 @@
 .personalSkills
-	flex-basis: 70%
+	flex-basis: $right-column
 	display: flex
 	justify-content: space-between
 	article
-		flex-basis: 33%
+		flex: 1 
+		h3
+			// Terrible hack to match ul starting points
+			min-height: 44px
+		ul
+			border-left: 1px solid lighten($fontColor, 60)
+			// margin-left: -0.5rem
+			padding-left: 0.5rem
 	@media screen and(max-width: $break-small)
 		flex-direction: column
 		article
