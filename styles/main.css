@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400");
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+* {
+  box-sizing: content-box; }
+
+body {
+  background: #efefef; }
+
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 640px) {
+    html {
+      font-size: 18px; } }
+
+body {
+  font-family: 'Muli', san-serif;
+  -webkit-font-kerning: normal;
+  font-kerning: normal; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 1.5rem 0; }
+  @media screen and (max-width: 640px) {
+    h1 {
+      font-size: 2rem; } }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400; }
+  @media screen and (max-width: 640px) {
+    h2 {
+      font-size: 1.2rem; } }
+
+h3 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: 1rem; }
+  @media screen and (max-width: 640px) {
+    h3 {
+      padding-bottom: 0; } }
+
+p {
+  font-weight: 400;
+  font-size: 0.9rem; }
+
+ul {
+  font-size: 0.9rem; }
+
+.faded {
+  color: #666666; }
+
+.page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  padding: 0 2.54cm;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+  .page.A4page {
+    max-width: 21cm;
+    min-height: 29.7cm; }
+  @media screen and (max-width: 640px) {
+    .page {
+      padding: 0 30px; } }
+
+.descriptionContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff; }
+  .descriptionContainer .descriptionTitle {
+    -webkit-flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    text-transform: uppercase; }
+  .descriptionContainer .descriptionText {
+    -webkit-flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+    text-align: justify; }
+  .descriptionContainer:before {
+    display: block;
+    color: #999999;
+    letter-spacing: 1px;
+    font-size: 0.6em;
+    overflow: hidden;
+    content: '....................................................................................................................................................................................................................'; }
+  @media screen and (max-width: 640px) {
+    .descriptionContainer {
+      display: block; } }
+
+.mainHeader {
+  text-align: center;
+  padding: 3em 0; }
+
+.contacts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 11pt;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (min-width: 640px) {
+    .contacts {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .contacts li:nth-child(1):after, .contacts li:nth-child(2):after {
+        content: "\25cf";
+        text-align: center;
+        padding: 0 0.5em; } }
+
+.personalSkills {
+  -webkit-flex-basis: 70%;
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .personalSkills article {
+    -webkit-flex-basis: 33%;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%; }
+  @media screen and (max-width: 640px) {
+    .personalSkills {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .personalSkills article {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .personalSkills article > * {
+          -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
+
+.mainFooter {
+  text-align: center;
+  padding: 2em 0; }
+
+/*# sourceMappingURL=main.css.map */

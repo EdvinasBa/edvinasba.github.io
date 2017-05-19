@@ -1,0 +1,22 @@
+.descriptionContainer
+	display: flex
+	flex-wrap: wrap
+	background-color: #fff;
+	// border-top: 1px dotted lighten($fontColor, 80)
+	// background: #fefefe
+	.descriptionTitle
+		flex-basis: 30%
+		text-transform: uppercase
+	.descriptionText
+		flex-basis: 70%
+		text-align: justify
+	&:before
+		// CSS spec doesn't provide us with a proper to customise the dotted line, so I'll just use real dots 
+		display: block
+		color: lighten($fontColor, 60)
+		letter-spacing: 1px
+		font-size: 0.6em
+		overflow: hidden
+		content: '....................................................................................................................................................................................................................'
+	@media screen and(max-width: $break-small)
+		display: block

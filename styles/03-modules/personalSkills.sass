@@ -1,0 +1,12 @@
+.personalSkills
+	flex-basis: 70%
+	display: flex
+	justify-content: space-between
+	article
+		flex-basis: 33%
+	@media screen and(max-width: $break-small)
+		flex-direction: column
+		article
+			display: flex
+			> *
+				flex-basis: 50%
