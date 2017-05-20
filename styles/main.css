@@ -32,6 +32,9 @@ h1 {
     h1 {
       font-size: 2rem;
       text-align: left; } }
+  @media screen and (max-width: 320px) {
+    h1 {
+      font-size: 1.6rem; } }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -133,7 +136,7 @@ strong {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-size: 11pt;
+  font-size: 0.85rem;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -146,7 +149,10 @@ strong {
     .contacts {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
       .contacts li:nth-child(1):after, .contacts li:nth-child(2):after {
         content: "";
         padding: 0; } }
