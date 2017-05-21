@@ -2,17 +2,19 @@
 	display: flex
 	text-align: center
 	flex-wrap: wrap
-	font-size: 11pt
+	font-size: 0.85rem
 	justify-content: center
 	margin: 0
 	li
 		&:nth-child(1), &:nth-child(2)
 			&:after
+				// Dot things
 				content: "\25cf"
 				text-align: center
 				padding: 0 0.5em
 	@media screen and(max-width: $break-small)
 		flex-direction: column
+		justify-content: flex-start
 		li
 			&:nth-child(1), &:nth-child(2)
 				&:after
