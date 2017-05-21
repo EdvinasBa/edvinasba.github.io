@@ -76,6 +76,9 @@ ul {
 strong {
   font-weight: 700; }
 
+@page {
+  margin: 0.00000001cm; }
+
 .page {
   background: white;
   display: block;
@@ -89,10 +92,6 @@ strong {
   @media screen and (max-width: 720px) {
     .page {
       padding: 0 30px; } }
-  @media print {
-    .page {
-      box-shadow: 0;
-      max-width: 100%; } }
 
 .descriptionContainer {
   display: -webkit-flex;
@@ -129,6 +128,10 @@ strong {
   @media screen and (max-width: 720px) {
     .mainHeader {
       padding: 1em 0; } }
+
+@media print {
+  .mainHeader {
+    padding: 1em 0 !important; } }
 
 .contacts {
   display: -webkit-flex;
