@@ -1,0 +1,18 @@
+{
+	"type" : "experience",
+	"data": 
+    [
+        {
+            "place" : "Beta LAN",
+            "duty" : "fotografas",
+            "date" : "2016 10 15",
+            "description" : "Savanoriavau fotografuodamas renginį"
+        },
+        {
+            "place" : "NRD Akademija",
+            "duty" : "",
+            "date" : "2016 03 13",
+            "description" : "Darbas komandoje – baigiamasis projektas. Internetinė parduotuvė nuo 0."
+        }
+    ]
+}

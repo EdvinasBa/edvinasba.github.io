@@ -7,6 +7,10 @@
         // Load skillsets
         loadAjax("JSON/skillset.json");
         loadAjax("JSON/profile.json");
+        loadAjax("JSON/other.json");
+        loadAjax("JSON/experience.json");
+        loadAjax("JSON/education.json");
+        
     }, false);
 
     // Calls html render functions based on object data type
@@ -16,7 +20,16 @@
             renderSkillset(data);
             break;
         case "profile":
-            renderProfile(data);
+            renderParagraph(data, "profile");
+            break;
+        case "other":
+            renderParagraph(data, "other");
+            break;
+        case "experience":
+            renderDateList(data, "experience");
+            break;
+        case "education":
+            renderDateList(data, "education");
             break;
         }
     }
@@ -47,10 +60,28 @@
         console.log("Skills loaded");
     }
 
-    function renderProfile(data) {
+    function renderParagraph(data, domID) {
         var htmlString = "";
         htmlString += '<p class="descriptionText">' + data.data + '</p>';
-        document.getElementById("profile").insertAdjacentHTML('beforeend', htmlString);
-        console.log("Profile loaded");
+        document.getElementById(domID).insertAdjacentHTML('beforeend', htmlString);
+        console.log("Paragraph loaded - " + domID);
+    }
+
+    function renderDateList(data, domID) {
+        var htmlString = '<div class="dateList">';
+        data.data.forEach(function (element) {
+            htmlString += "<article>" + "<div>";
+            htmlString += "<h3> <strong>" + element.place + "</strong>";
+            if (element.duty) {
+                htmlString += ", " + element.duty + "</h3>";
+            }
+            htmlString += "<h3>" + element.date + "</h3>";
+            htmlString += "</div>";
+            htmlString += "<p>" + element.description + "</p>";
+            htmlString += "</article>";
+        }, this);
+        htmlString += '</div>';
+        document.getElementById(domID).insertAdjacentHTML('beforeend', htmlString);
+        console.log("DateList loaded - " + domID);
     }
 })();
