@@ -60,13 +60,14 @@
         console.log("Skills loaded");
     }
 
+    // Renders a paragraph in a given element
     function renderParagraph(data, domID) {
         var htmlString = "";
         htmlString += '<p class="descriptionText">' + data.data + '</p>';
         document.getElementById(domID).insertAdjacentHTML('beforeend', htmlString);
         console.log("Paragraph loaded - " + domID);
     }
-
+    // Renders a dateList (experience, education, similar) in a given ID
     function renderDateList(data, domID) {
         var htmlString = '<div class="dateList">';
         data.data.forEach(function (element) {
