@@ -12,7 +12,8 @@
 		{
 			"category" : "Programinė įranga",
 			"skills" : [
-				"Adobe lightroom",
+				"Adobe Lightroom",
+				"Adobe Photoshop",
 				"Git"
 			]
 		},
@@ -21,8 +22,8 @@
 			"skills" : [
 				"C#",
 				"HTML5",
-				"Javascript",
-				"CSS",
+				"JavaScript",
+				"CSS3",
 				"SASS"
 			]
 		}
