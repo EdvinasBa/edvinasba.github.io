@@ -506,7 +506,9 @@ nav .burger {
   width: 40px;
   height: 25px;
   cursor: pointer;
-  z-index: 99; }
+  z-index: 99;
+  -webkit-tap-highlight-color: transparent;
+  outline-style: none; }
   nav .burger span {
     display: block;
     height: 5px;
