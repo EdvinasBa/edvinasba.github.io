@@ -1,0 +1,65 @@
+$pos-y: 20px
+$pos-x: 20px
+
+nav
+    .burger
+        position: fixed
+        top: $pos-y
+        right: $pos-x
+        width: 40px
+        height: 25px
+        cursor: pointer
+        z-index: 99
+        span
+            display: block
+            height: 5px
+            width: 100%
+            background: black
+            transition: all 0.15s $menu-bezier
+            &:nth-child(1)
+                margin-bottom: 5px
+            &:nth-child(2)
+                transition: all 0.1s linear
+            &:nth-child(3)
+                margin-top: 5px
+        &.active span
+            &:nth-child(1)
+                transform: rotate(45deg) translateY(7px)
+                margin: 0
+            &:nth-child(2)
+                width: 0
+            &:nth-child(3)
+                transform: rotate(-45deg) translateY(-7px)
+                margin: 0
+
+// New
+
+.nav
+    position: absolute
+    left: 50%
+    transform: translate(-50%,-105%)
+    transition: all 0.3s ease-in-out
+    width: 100%
+    background: #fefefe
+    nav
+        display: flex
+        justify-content: space-around
+        a
+            $paddingHeight: 0.8rem
+            padding: $paddingHeight 1rem
+            margin: (1rem - $paddingHeight) 0
+            transition: all 0.2s ease-in-out
+            &:hover
+                color: lighten($fontColor,10)
+                background: #efefef
+            @media screen and(max-width: $break-small)
+                margin: 0.5rem 0
+                padding: $paddingHeight 0
+        @media screen and(max-width: $break-small)
+            flex-direction: column
+    @media screen and(max-width: $break-small)    
+        position: fixed
+        // justify-content: flex-start
+    &.active
+        display: block    
+        transform: translate(-50%,0%)
