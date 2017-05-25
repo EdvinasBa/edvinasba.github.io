@@ -1,3 +1,8 @@
+$instagram-icon: "\f16d"
+$camera-icon: "\f083"
+$code-icon: "\f121"
+$facebook-icon: "\f09a"
+
 $pos-y: 20px
 $pos-x: 20px
 
@@ -60,8 +65,31 @@ nav
             @media screen and(max-width: $break-small)
                 margin: 0.5rem 0
                 padding: $paddingHeight 0
+            // Icons go here
+            &:before
+                font-family: FontAwesome
+                font-size: 1.5rem
+                padding: 0 0.5rem
+                vertical-align: -10% 
+                @media screen and(max-width: $break-small)
+                    display: inline-block
+                    width: 2rem
+            &:nth-child(1)
+                &:before
+                    content: $code-icon
+            &:nth-child(2)
+                &:before
+                    content: $instagram-icon
+            &:nth-child(3)
+                &:before
+                    content: $camera-icon
+            &:nth-child(4)
+                &:before
+                    content: $facebook-icon
+
         @media screen and(max-width: $break-small)
             flex-direction: column
+            width: 90%
     @media screen and(max-width: $break-small)    
         position: fixed
         // position: absolute

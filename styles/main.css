@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
  * ========================================================================== */
@@ -564,11 +565,29 @@ nav {
         .nav nav a {
           margin: 0.5rem 0;
           padding: 0.8rem 0; } }
+      .nav nav a:before {
+        font-family: FontAwesome;
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+        vertical-align: -10%; }
+        @media screen and (max-width: 720px) {
+          .nav nav a:before {
+            display: inline-block;
+            width: 2rem; } }
+      .nav nav a:nth-child(1):before {
+        content: ""; }
+      .nav nav a:nth-child(2):before {
+        content: ""; }
+      .nav nav a:nth-child(3):before {
+        content: ""; }
+      .nav nav a:nth-child(4):before {
+        content: ""; }
     @media screen and (max-width: 720px) {
       .nav nav {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        width: 90%; } }
   @media screen and (max-width: 720px) {
     .nav {
       position: fixed;
