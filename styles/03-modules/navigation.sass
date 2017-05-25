@@ -34,7 +34,8 @@ nav
             &:nth-child(3)
                 transform: rotate(-45deg) translateY(-7px)
                 margin: 0
-
+    @media print
+        display: none
 // New
 
 .nav
@@ -66,3 +67,5 @@ nav
     &.active
         display: block    
         transform: translate(-50%,0%)
+    @media print
+        display: none
