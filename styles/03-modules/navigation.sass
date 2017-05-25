@@ -2,6 +2,9 @@ $pos-y: 20px
 $pos-x: 20px
 
 nav
+    display: none
+    @media screen and(max-width: $break-small)
+        display: block
     .burger
         position: fixed
         top: $pos-y
@@ -39,9 +42,7 @@ nav
 // New
 
 .nav
-    position: absolute
-    left: 50%
-    transform: translate(-50%,-105%)
+
     transition: all 0.3s ease-in-out
     width: 100%
     background: #fefefe
@@ -63,6 +64,9 @@ nav
             flex-direction: column
     @media screen and(max-width: $break-small)    
         position: fixed
+        // position: absolute
+        left: 50%
+        transform: translate(-50%, -105%)
         // justify-content: flex-start
     &.active
         display: block    
