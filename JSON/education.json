@@ -3,15 +3,15 @@
 	"data": 
     [
         {
-            "place" : "Kauno Technologijos Universitetas",
-            "duty" : "",
-            "date" : "2016 - 2020",
-            "description" : "Programų sistemos - bakalauras"
+            "place" : "",
+            "duty" : "Programų sistemos - bakalauras",
+            "date" : "2016 - dabar",
+            "description" : "Kauno Technologijos Universitetas"
         },
         {
-            "place" : "NRD Akademija",
-            "duty" : "",
-            "date" : "2017 03 13",
+            "place" : "",
+            "duty" : "NRD Akademija",
+            "date" : "2017 03 - 04",
             "description" : "Darbas komandoje – baigiamasis projektas. Internetinė parduotuvė nuo 0."
         }
     ]

@@ -20,3 +20,9 @@
 		content: '....................................................................................................................................................................................................................'
 	@media screen and(max-width: $break-small)
 		display: block
+// headerLess removes header from bigger displays
+.headerLess
+	@media screen and(min-width: $break-small)
+		display: block
+		.descriptionTitle
+			display: none

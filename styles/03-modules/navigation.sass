@@ -2,6 +2,7 @@ $instagram-icon: "\f16d"
 $camera-icon: "\f083"
 $code-icon: "\f121"
 $facebook-icon: "\f09a"
+$language-icon: "\f1ab"
 
 $pos-y: 20px
 $pos-x: 20px
@@ -54,11 +55,12 @@ nav
     nav
         display: flex
         justify-content: space-around
-        a
-            $paddingHeight: 0.8rem
+        .menuItem
+            $paddingHeight: 0.5rem
             padding: $paddingHeight 1rem
-            margin: (1rem - $paddingHeight) 0
+            margin: (0.7rem - $paddingHeight) 0
             transition: all 0.2s ease-in-out
+            display: inline-block
             &:hover
                 color: lighten($fontColor,10)
                 background: #efefef
@@ -67,6 +69,7 @@ nav
                 padding: $paddingHeight 0
             // Icons go here
             &:before
+                // TODO: Fixed FA jagged edges
                 font-family: FontAwesome
                 font-size: 1.5rem
                 padding: 0 0.5rem
@@ -86,6 +89,17 @@ nav
             &:nth-child(4)
                 &:before
                     content: $facebook-icon
+            &:nth-child(5)
+                &:before
+                    content: $language-icon
+            &.lang
+                display: flex
+                ul
+                    margin: 0
+                    li
+                        cursor: pointer
+            .current
+                text-decoration: underline
 
         @media screen and(max-width: $break-small)
             flex-direction: column

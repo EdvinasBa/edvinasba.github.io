@@ -11,6 +11,7 @@
 	<meta charset="UTF-8">
 </head>
 <body>
+	<!-- Burger icon, mmm -->
 	<nav>
 		<div class="burger" id="burgerToggle">
 			<span></span>
@@ -19,12 +20,19 @@
 		</div>
 	</nav>
 
+	<!-- Navigation  -->
 	<div class="page A4Responsive nav" id ="topNav">
 		<nav>
-			<a target="_blank" href="https://github.com/EdvinasBa/edvinasba.github.io">Source</a>
-			<a target="_blank" href="https://www.instagram.com/edvinasba/">Instagram</a>
-			<a target="_blank" href="https://edvinasba.tumblr.com/">Photography</a>
-			<a target="_blank" href="https://www.facebook.com/edvin.hhh">Facebook</a>
+			<a class="menuItem" target="_blank" href="https://github.com/EdvinasBa/edvinasba.github.io">Source</a>
+			<a class="menuItem" target="_blank" href="https://www.instagram.com/edvinasba/">Instagram</a>
+			<a class="menuItem" target="_blank" href="https://edvinasba.tumblr.com/">Photography</a>
+			<a class="menuItem" target="_blank" href="https://www.facebook.com/edvin.hhh">Facebook</a>
+			<div class="menuItem lang">
+				<ul>
+					<li class="current">Lietuvių</li>
+					<li>English</li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 	
@@ -38,13 +46,19 @@
 				<li class="phoneNumber">+37063381688</li>
 			</ul>
 		</header>
-		<main>
 
-			<article class="descriptionContainer" id = "profile">
+		<main>
+			
+			<article class="descriptionContainer headerLess" id = "profile">
 				<h2 class="descriptionTitle">Profilis</h2>
 				<!--JSON HERE-->
 			</article>
 
+			<article class="descriptionContainer" id = "education">
+				<h2 class="descriptionTitle">IŠSILAVINIMAS</h2>
+				<!--JSON HERE-->
+			</article>
+			
 			<article class="descriptionContainer" id = "experience">
 				<h2 class="descriptionTitle">PATIRTIS</h2>
 			</article>
@@ -56,10 +70,6 @@
 				</div>
 			</article>
 
-			<article class="descriptionContainer" id = "education">
-				<h2 class="descriptionTitle">IŠSILAVINIMAS</h2>
-				<!--JSON HERE-->
-			</article>
 
 			<article class="descriptionContainer" id = "other">
 				<h2 class="descriptionTitle">KITA</h2>
@@ -76,6 +86,7 @@
 			</ul>
 		</footer>
 	</div>
+	<!-- Scripts -->
 	<script src="scripts/loadText.js"></script>
 	<script src="scripts/formatNumber.js"></script>
 	<script src="scripts/menu.js"></script>

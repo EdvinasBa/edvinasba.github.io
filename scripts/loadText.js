@@ -72,9 +72,9 @@
         var htmlString = '<div class="dateList">';
         data.data.forEach(function (element) {
             htmlString += "<article>" + "<div>";
-            htmlString += "<h3> <strong>" + element.place + "</strong>";
-            if (element.duty) {
-                htmlString += ", " + element.duty + "</h3>";
+            htmlString += "<h3> <strong>" + element.duty + "</strong>";
+            if (element.place) {
+                htmlString += ", " + element.place + "</h3>";
             }
             htmlString += "<h3>" + element.date + "</h3>";
             htmlString += "</div>";

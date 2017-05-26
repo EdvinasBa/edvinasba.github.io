@@ -399,6 +399,12 @@ strong {
     .descriptionContainer {
       display: block; } }
 
+@media screen and (min-width: 720px) {
+  .headerLess {
+    display: block; }
+    .headerLess .descriptionTitle {
+      display: none; } }
+
 .mainHeader {
   text-align: center;
   padding: 3em 0; }
@@ -554,34 +560,47 @@ nav {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-    .nav nav a {
-      padding: 0.8rem 1rem;
+    .nav nav .menuItem {
+      padding: 0.5rem 1rem;
       margin: 0.2rem 0;
-      transition: all 0.2s ease-in-out; }
-      .nav nav a:hover {
+      transition: all 0.2s ease-in-out;
+      display: inline-block; }
+      .nav nav .menuItem:hover {
         color: #1a1a1a;
         background: #efefef; }
       @media screen and (max-width: 720px) {
-        .nav nav a {
+        .nav nav .menuItem {
           margin: 0.5rem 0;
-          padding: 0.8rem 0; } }
-      .nav nav a:before {
+          padding: 0.5rem 0; } }
+      .nav nav .menuItem:before {
         font-family: FontAwesome;
         font-size: 1.5rem;
         padding: 0 0.5rem;
         vertical-align: -10%; }
         @media screen and (max-width: 720px) {
-          .nav nav a:before {
+          .nav nav .menuItem:before {
             display: inline-block;
             width: 2rem; } }
-      .nav nav a:nth-child(1):before {
+      .nav nav .menuItem:nth-child(1):before {
         content: ""; }
-      .nav nav a:nth-child(2):before {
+      .nav nav .menuItem:nth-child(2):before {
         content: ""; }
-      .nav nav a:nth-child(3):before {
+      .nav nav .menuItem:nth-child(3):before {
         content: ""; }
-      .nav nav a:nth-child(4):before {
+      .nav nav .menuItem:nth-child(4):before {
         content: ""; }
+      .nav nav .menuItem:nth-child(5):before {
+        content: ""; }
+      .nav nav .menuItem.lang {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .nav nav .menuItem.lang ul {
+          margin: 0; }
+          .nav nav .menuItem.lang ul li {
+            cursor: pointer; }
+      .nav nav .menuItem .current {
+        text-decoration: underline; }
     @media screen and (max-width: 720px) {
       .nav nav {
         -webkit-flex-direction: column;
