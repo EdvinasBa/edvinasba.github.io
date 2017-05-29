@@ -3,14 +3,14 @@
 	"data":
 	[
 		{
-			"category" : "Kalbos",
+			"category" : "Languages",
 			"skills" : [
-				"Lietuvių (Gimtoji)",
-				"Anglų"
+				"Lithuanian (Native)",
+				"English (B2)"
 			]
 		},
 		{
-			"category" : "Programinė įranga",
+			"category" : "Software",
 			"skills" : [
 				"Adobe Lightroom",
 				"Adobe Photoshop",
@@ -18,13 +18,12 @@
 			]
 		},
 		{
-			"category" : "Technologijos",
+			"category" : "Technologies",
 			"skills" : [
 				"C#",
 				"HTML5",
 				"JavaScript",
-				"CSS3",
-				"SASS"
+				"SASS (CSS3)"
 			]
 		}
 	]

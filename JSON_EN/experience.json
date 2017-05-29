@@ -3,10 +3,28 @@
 	"data": 
     [
         {
-            "place" : "diplomų įteikimai",
-            "duty" : "Fotografas",
+            "place" : "graduation fest",
+            "duty" : "Photographer",
             "date" : "2017 01 27",
-            "description" : "Savanoriavau fotografuodamas renginį KTU"
+            "description" : "Volunteer photographer of the event at KTU"
+        },
+        {
+            "place" : "<a href='https://github.com/InetaJurkute/visos-uzduotys' target='_blank'> click </a>",
+            "duty" : "NRD project",
+            "date" : "2017 03 - 04",
+            "description" : "Web shop using Angular/asp.net, front-end part"
+        },
+        {
+            "place" : "<a href='https://codepen.io/edvinasba' target='_blank'> click </a>",
+            "duty" : "CodePen projects",
+            "date" : "2017",
+            "description" : "I have a few small projects on CodePen"
+        },
+        {
+            "place" : "<a href='https://edvinasba.github.io/' target='_blank'> click </a>",
+            "duty" : "CV project",
+            "date" : "2017",
+            "description" : "I wrote my CV using HTML/SASS/JS + JSON"
         }
     ]
 }

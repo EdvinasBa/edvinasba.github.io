@@ -4,15 +4,15 @@
     [
         {
             "place" : "",
-            "duty" : "Programų sistemos - bakalauras",
-            "date" : "2016 - dabar",
-            "description" : "Kauno Technologijos Universitetas"
+            "duty" : "Software systems - bachelors",
+            "date" : "2016 - now",
+            "description" : "Kaunas University of Technology, Object Oriented Programming 1/2 "
         },
         {
             "place" : "",
-            "duty" : "NRD Akademija",
+            "duty" : "NRD Academy",
             "date" : "2017 03 - 04",
-            "description" : "Darbas komandoje – baigiamasis projektas. Internetinė parduotuvė nuo 0."
+            "description" : "Teamwork - final task, web shop from scratch"
         }
     ]
 }

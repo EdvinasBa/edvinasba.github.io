@@ -1,0 +1,18 @@
+{
+	"type" : "personality",
+	"data": 
+    [
+        {
+            "trait" : "Creative",
+            "description" : "I am able to independently / using available resources create something new"
+        },
+        {
+            "trait" : "Independent learner",
+            "description" : "I am able to learn new things by myself, but ask others for help when I'm stuck"
+        },
+        {
+            "trait" : "Open",
+            "description" : "I accept new ideas, but when needed can think critically"
+        }
+    ]
+}
