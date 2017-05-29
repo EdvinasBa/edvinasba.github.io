@@ -6,6 +6,11 @@
     document.addEventListener('DOMContentLoaded', function () {
         // Load skillsets
         var lang = getParameterByName('lang');
+
+        if (!lang) {
+            lang = "LT";
+        }
+
         var searchQuery = "[data-lang='" + lang + "']";
         console.log(searchQuery);
         document.querySelector(searchQuery).classList.add("current");
@@ -123,7 +128,7 @@
         selectedSection.getElementsByClassName("descriptionTitle")[0].innerHTML = data.name;
 
         selectedSection.insertAdjacentHTML('beforeend', htmlString);
-        
+
         console.log("Left/Right blocks loaded - " + "leftRightBlocks");
     }
 
