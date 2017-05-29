@@ -7,9 +7,11 @@
         // Load skillsets
         loadAjax("JSON/skillset.json");
         loadAjax("JSON/profile.json");
-        loadAjax("JSON/other.json");
+        // loadAjax("JSON/other.json");
         loadAjax("JSON/experience.json");
         loadAjax("JSON/education.json");
+        loadAjax("JSON/personality.json");
+        
         
     }, false);
 
@@ -30,6 +32,9 @@
             break;
         case "education":
             renderDateList(data, "education");
+            break;
+        case "personality":
+            renderLeftRightBlocks(data);
             break;
         }
     }
@@ -84,5 +89,20 @@
         htmlString += '</div>';
         document.getElementById(domID).insertAdjacentHTML('beforeend', htmlString);
         console.log("DateList loaded - " + domID);
+    }
+
+    //leftRightBlocks
+    function renderLeftRightBlocks(data){
+        var htmlString = "";
+        data.data.forEach(function(element){
+            htmlString += "<article>";
+            htmlString += "<h3><strong>"
+            htmlString += element.trait;
+            htmlString += "</strong></h3>";
+            htmlString += "<p>" + element.description + "</p>"
+            htmlString += "</article>"
+        }, this);
+        document.getElementById("leftRightBlocks").insertAdjacentHTML('beforeend', htmlString);
+        console.log("Left/Right blocks loaded - " + "leftRightBlocks");
     }
 })();

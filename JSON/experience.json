@@ -7,6 +7,24 @@
             "duty" : "Fotografas",
             "date" : "2017 01 27",
             "description" : "Savanoriavau fotografuodamas renginį KTU"
+        },
+        {
+            "place" : "<a href='https://github.com/InetaJurkute/visos-uzduotys' target='_blank'> spausti </a>",
+            "duty" : "NRD projektas",
+            "date" : "2017 03 - 04",
+            "description" : "Internetinė parduotuvė su Angular/asp.net, front-end dalis"
+        },
+        {
+            "place" : "<a href='https://codepen.io/edvinasba' target='_blank'> spausti </a>",
+            "duty" : "CodePen projektai",
+            "date" : "2017",
+            "description" : "Turiu kelis mažus projektus CodePen"
+        },
+        {
+            "place" : "<a href='https://edvinasba.github.io/' target='_blank'> spausti </a>",
+            "duty" : "CV projektas",
+            "date" : "2017",
+            "description" : "Pasidariau CV naudodamas HTML/SASS/JS + JSON"
         }
     ]
 }
