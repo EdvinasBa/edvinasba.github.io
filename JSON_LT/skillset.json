@@ -1,0 +1,31 @@
+{
+	"type" : "skills",
+	"name" : "Įgūdžiai",
+	"data":
+	[
+		{
+			"category" : "Kalbos",
+			"skills" : [
+				"Lietuvių (Gimtoji)",
+				"Anglų (B2)"
+			]
+		},
+		{
+			"category" : "Programinė įranga",
+			"skills" : [
+				"Adobe Lightroom",
+				"Adobe Photoshop",
+				"Git"
+			]
+		},
+		{
+			"category" : "Technologijos",
+			"skills" : [
+				"C#",
+				"HTML5",
+				"JavaScript",
+				"SASS (CSS3)"
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"type" : "personality",
+    "name" : "Asmenybė",
+	"data": 
+    [
+        {
+            "trait" : "Kūrybiškas",
+            "description" : "Sugebu savarankiškai / naudodamas turimus resursus sukurti kažką naujo"
+        },
+        {
+            "trait" : "Savarankiškas",
+            "description" : "Web technologijas mokausi pats, sugebu susirasti informaciją, kai nepavyksta - klausiu"
+        },
+        {
+            "trait" : "Atviras",
+            "description" : "Priimu naujas įdėjas, bet moku mąstyti ir kritiškai"
+        }
+    ]
+}
