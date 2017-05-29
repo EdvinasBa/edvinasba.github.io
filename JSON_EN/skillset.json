@@ -1,0 +1,31 @@
+{
+	"type" : "skills",
+	"data":
+	[
+		{
+			"category" : "Kalbos",
+			"skills" : [
+				"Lietuvių (Gimtoji)",
+				"Anglų"
+			]
+		},
+		{
+			"category" : "Programinė įranga",
+			"skills" : [
+				"Adobe Lightroom",
+				"Adobe Photoshop",
+				"Git"
+			]
+		},
+		{
+			"category" : "Technologijos",
+			"skills" : [
+				"C#",
+				"HTML5",
+				"JavaScript",
+				"CSS3",
+				"SASS"
+			]
+		}
+	]
+}

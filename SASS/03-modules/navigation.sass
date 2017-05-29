@@ -7,10 +7,13 @@ $language-icon: "\f1ab"
 $pos-y: 20px
 $pos-x: 20px
 
+// Ham
 nav
     display: none
     @media screen and(max-width: $break-small)
         display: block
+    @media print
+        display: none
     .burger
         position: fixed
         top: $pos-y
@@ -34,6 +37,7 @@ nav
                 transition: all 0.1s linear
             &:nth-child(3)
                 margin-top: 5px
+        // Tranformations
         &.active span
             &:nth-child(1)
                 transform: rotate(45deg) translateY(7px)
@@ -43,12 +47,10 @@ nav
             &:nth-child(3)
                 transform: rotate(-45deg) translateY(-7px)
                 margin: 0
-    @media print
-        display: none
 // New
 
 .nav
-
+    padding: 0
     transition: all 0.3s ease-in-out
     width: 100%
     background: #fefefe
@@ -57,12 +59,11 @@ nav
         justify-content: space-around
         .menuItem
             $paddingHeight: 0.5rem
-            padding: $paddingHeight 1rem
+            padding: $paddingHeight 0.3rem
             margin: (0.7rem - $paddingHeight) 0
-            transition: all 0.2s ease-in-out
-            display: inline-block
+            transition: all 0.3s ease-in-out
             &:hover
-                color: lighten($fontColor,10)
+                color: lighten($fontColor,20)
                 background: #efefef
             @media screen and(max-width: $break-small)
                 margin: 0.5rem 0
@@ -103,7 +104,7 @@ nav
 
         @media screen and(max-width: $break-small)
             flex-direction: column
-            width: 90%
+            width: calc(100% - 80px)
     @media screen and(max-width: $break-small)    
         position: fixed
         // position: absolute
