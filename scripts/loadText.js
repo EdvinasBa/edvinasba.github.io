@@ -140,11 +140,8 @@
         
         // Clean up the name
         name = name.replace(/[\[\]]/g, "\\$&");
-        
-        // ???
+        // Find the parameter
         var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        
-        // ???
         results = regex.exec(url);
         
         // Return results
